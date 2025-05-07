@@ -12,6 +12,6 @@ app_name = "api"
 urlpatterns = [
     path("", include(router.urls)),
 
-    path('health/live', views.liveness_view),
-    path('health/ready', views.readiness_view),
+    path("health/live/", views.liveness_view),
+    path("health/ready/", views.readiness_view),
 ]

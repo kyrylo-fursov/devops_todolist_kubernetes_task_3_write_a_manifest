@@ -10,11 +10,6 @@ kubectl apply -f .infrastructure/todoapp-pod.yml
 kubectl port-forward -n todoapp pod/todoapp 8000:8000
 
 
-## 2. To test the application from local browser or curl, use:
-
-kubectl port-forward -n todoapp pod/todoapp 8000:8000
-
-
 ## 3. Test application from inside the cluster
 
 kubectl exec -it -n todoapp busybox-curl -- sh
